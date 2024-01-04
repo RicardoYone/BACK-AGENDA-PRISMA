@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Editar contacto</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>Editar contacto</h1>
+    <form action="/<%= contact.id %>" method="post">
+      <label>
+        Nombre:
+        <input type="text" name="name" value="<%= contact.name %>" required />
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" value="<%= contact.email %>" required />
+      </label>
+      <label>
+        Teléfono:
+        <input type="tel" name="phone" value="<%= contact.phone %>" required />
+      </label>
+      <button type="submit">Actualizar contacto</button>
+    </form>
+  </body>
+</html>
